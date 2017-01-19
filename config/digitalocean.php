@@ -40,17 +40,17 @@ return [
 
         'main' => [
             'driver'  => 'guzzlehttp',
-            'token'   => 'your-token',
+            'token'   => env('DIGIO_TOKEN', 'your-token'),
         ],
 
         'other' => [
             'driver'  => 'guzzle',
-            'token'   => 'your-token',
+            'token'   => env('DIGIO_TOKEN', 'your-token'),
         ],
 
         'alternative' => [
             'driver'  => 'buzz',
-            'token'   => 'your-token',
+            'token'   => env('DIGIO_TOKEN', 'your-token'),
         ],
 
     ],
